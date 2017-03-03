@@ -5,7 +5,8 @@
 
 	while ($x < 10){
 		$d = $a + $b;
-		echo ", $d";
+		echo "$d";
+		echo " , ";
 		$x++;
 		$a = $b;
 		$b = $d;
