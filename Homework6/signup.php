@@ -7,18 +7,20 @@ if(true) {
 		echo 'pero';
 
 		$db = dbo();
-		// print_r ($db);
+		print_r ($db);
 		$sql = "INSERT INTO  users (first_name, last_name, email, password, age) 
 		VALUES (:first_name, :last_name, :email, :password, :age)";
 
 		$query = $db->prepare($sql);
+		print_r ($query);
 		$query->bindValue(':first_name', $_POST['first_name']);
 		$query->bindValue(':last_name', $_POST['last_name']);
 		$query->bindValue(':email', $_POST['email']);
 		$query->bindValue(':password', $_POST['password']);
 		$query->bindValue(':age', $_POST['age']);
-		$query->execute();
-		$res = $query->fetchAll(PDO::FETCH_ASSOC);
+		$r = $query->execute();
+		print_r ($r);
+
 
 			if(count($res) == 1){
 					$_SESSION['first_name'] = $res[0]['first_name'];
@@ -30,10 +32,8 @@ if(true) {
 				}else{
 					// header('location: index.html');	
 				}
-				}else{
-				// header('location: index.html');
 			}
-
+	
 
 
 ?>
