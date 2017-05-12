@@ -22,17 +22,7 @@ if(true) {
 		print_r ($r);
 
 
-			if(count($res) == 1){
-					$_SESSION['first_name'] = $res[0]['first_name'];
-					$_SESSION['last_name'] = $res[0]['last_name'];
-					$_SESSION['email'] = $res[0]['email'];
-					$_SESSION['password'] = $res[0]['password'];
-					$_SESSION['age'] = $res[0]['age'];
-					$_SESSION['user_id'] = $res[0]['id'];
-				}else{
-					// header('location: index.html');	
-				}
-			}
+	}
 	
 
 
