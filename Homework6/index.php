@@ -11,27 +11,27 @@
 	<form action="signup.php" method = "post">
 	 	<label for = "name">
 	 		NAME:
-	 		<input type="text" value ="" name="name" required>
+	 		<input type="text" name="first_name" required>
 	 	</label> 	
 
 	 	<label for = "lastname">
 	 		LASTNAME:
-	 		<input type="text" value ="" name="lastname" required>
+	 		<input type="text" name="last_name" required>
 	 	</label> 	
 
 	 	<label for = "email">
 	 		EMAIL:
-	 		<input type="emai;" value ="" name="email" required>
+	 		<input type="email;" name="email" required>
 	 	</label> 	
 
 	 	<label for = "password">
 	 		PASSWORD:
-	 		<input type="password" value ="" name="password" required>
+	 		<input type="password" name="password" required>
 	 	</label> 	
 
 	 	<label for = "age">
 	 		AGE:
-	 		<input type="number" value ="" name="number" required>
+	 		<input type="number" name="age" required>
 	 	</label>
 
 	 	<button type="submit">Sign Up</button>
