@@ -24,11 +24,11 @@ if(true) {
 
 		$query = $db->prepare($sql);
 		print_r ($query);
-		$query->bindValue(':first_name', 'peroo');
-		$query->bindValue(':last_name', 'pero');
-		$query->bindValue(':email', 'pero');
-		$query->bindValue(':password', 'pero');
-		$query->bindValue(':age', 89);
+		$query->bindValue(':first_name', $_POST['first_name']);
+		$query->bindValue(':last_name', $_POST['last_name']);
+		$query->bindValue(':email', $_POST['email']);
+		$query->bindValue(':password', $_POST['password']);
+		$query->bindValue(':age', $_POST['age']);
 
 
 	}
